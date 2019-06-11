@@ -1,6 +1,5 @@
 cmake_minimum_required (VERSION 3.2)
 project(OpenFace VERSION 2.0.2)
-
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin/)
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/modules/")
@@ -43,7 +42,7 @@ if(${Boost_FOUND})
 	MESSAGE("  Boost_VERSION: ${Boost_VERSION}")
 	MESSAGE("  Boost_INCLUDE_DIRS: ${Boost_INCLUDE_DIRS}") 
 	MESSAGE("  Boost_LIBRARIES: ${Boost_LIBRARIES}") 
-	MESSAGE("  Boost_LIBRARY_DIRS: ${Boost_LIBRARY_DIRS}") 
+	MESSAGE("  Boost_LIBRARY_DIRS: ${Boost_LIBRARY_DIRS}")
 else()
     MESSAGE(FATAL_ERROR "Boost not found in the system.")
 endif()

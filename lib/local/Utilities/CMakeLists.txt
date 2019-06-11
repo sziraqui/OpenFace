@@ -20,7 +20,7 @@ SET(HEADERS
 	include/Visualizer.h	
 )
 
-add_library( Utilities ${SOURCE} ${HEADERS})
+add_library( Utilities SHARED ${SOURCE} ${HEADERS})
 add_library( OpenFace::Utilities ALIAS Utilities)
 
 target_include_directories(Utilities PUBLIC
